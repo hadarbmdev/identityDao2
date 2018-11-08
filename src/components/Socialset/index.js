@@ -81,52 +81,10 @@ class Socialset extends React.Component {
 
         return (
 
-            <main >
-
-            <CssBaseline />
-            <Paper >
-              
-              <Typography component="h1" variant="h5">
-                Socialset
-              </Typography>
-              <form >
-                <FormControl margin="normal" required fullWidth>
-                  <InputLabel htmlFor="email">Email Address</InputLabel>
-                  <Input id="email" name="email" autoComplete="email" autoFocus />
-                </FormControl>
-                <FormControl margin="normal" required fullWidth>
-                  <InputLabel htmlFor="password">Password</InputLabel>
-                  <Input name="password" type="password" id="password" autoComplete="current-password" />
-                </FormControl>
-                
-                <FormControl margin="normal" required fullWidth>
-                  <InputLabel htmlFor="facebook">Your Facebook username</InputLabel>
-                  <Input name="facebook" type="text" id="facebook" autoComplete="facebook" />
-                </FormControl>
-                
-                <FormControl margin="normal" required fullWidth>
-                  <InputLabel htmlFor="linkedin">Your Linkedin username</InputLabel>
-                  <Input name="linkedin" type="text" id="linkedin" autoComplete="linkedin" />
-                </FormControl>
-                
-                <FormControl margin="normal" required fullWidth>
-                  <InputLabel htmlFor="github">Your Github username</InputLabel>
-                  <Input name="github" type="text" id="github" autoComplete="github" />
-                </FormControl>
-                
-                
-                <Button
-                  type="submit"
-                  fullWidth
-                  variant="contained"
-                  color="primary"
-
-                  >
-                  Sign in
-                </Button>
-              </form>
-            </Paper>
-          </main>
+    <React.Fragment>
+      <CssBaseline />
+      {/* The rest of your application */}
+    </React.Fragment>
 
         )
     }
