@@ -16,12 +16,15 @@ const CandidatesSelector = (props) => {
 
   const candidatesList = props.candidates
 
-  const candidates = candidatesList.map((c) => {
+  const candidates = candidatesList.map((c,index) => {
 
     return <CandidateItem
+      key={index}
       photo={c.photo}
       firstname={c.firstname}
       lastname={c.lastname}
+      ethOffering={c.ethOffering}
+      socialMedia={c.socialMedia}
     />
   })
 
