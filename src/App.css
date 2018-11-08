@@ -128,3 +128,5 @@ div.candidate .candidateMeta{
   background: #729dad;
   opacity: 1;
 }
+
+#root{max-width:360px; margin: 0 auto;}
