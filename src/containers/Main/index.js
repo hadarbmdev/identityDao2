@@ -1,11 +1,10 @@
 import React from 'react';
 import { Route, Link, Redirect, Switch } from 'react-router-dom';
 import { Welcome } from '../../components/Welcome';
-import { Route, Link, Redirect, Switch } from 'react-router-dom'
-import { Welcome } from '../../components/Welcome'
 import { Voucher } from '../../components/Voucher'
 import { Register } from '../../components/Register';
 import { Socialset } from '../../components/Socialset';
+import { Swiper } from '../../components/Swiper';
 
 export default function Main() {
   return (
@@ -16,6 +15,7 @@ export default function Main() {
         <Route exact path="/register" component={Register} />
         <Route exact path="/socialset" component={Socialset} />
         <Route exact path="/voucher" component={Voucher} />
+        <Route exact path="/swiper" component={Swiper} />
 
     </div>
   );

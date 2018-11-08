@@ -23,12 +23,12 @@ import InputLabel from '@material-ui/core/InputLabel';
 //import LockIcon from '@material-ui/icons/LockOutlined';
 
 import withStyles from '@material-ui/core/styles/withStyles';
-
+/*
 import AddIcon from '@material-ui/icons/Add';
 import Icon from '@material-ui/core/Icon';
 import DeleteIcon from '@material-ui/icons/Delete';
 import NavigationIcon from '@material-ui/icons/Navigation';
-
+*/
 
 const styles = theme => ({
   main: {
@@ -82,10 +82,6 @@ class Socialset extends React.Component {
         return (
 
             <main >
-
-<Button variant="fab" color="primary" aria-label="Add" className={classes.button}>
-        <AddIcon />
-      </Button>
 
             <CssBaseline />
             <Paper >
