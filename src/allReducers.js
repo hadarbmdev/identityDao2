@@ -1,8 +1,12 @@
 
 import { combineReducers } from 'redux'
-import welcomeReducer from  './components/Welcome/reducers/reducer'
+import welcome from  './components/Welcome/reducers/reducer'
+import voucher from  './components/Voucher/reducers/reducer'
+import main from  './components/Voucher/reducers/reducer'
+
 const allReducers = combineReducers({
-    welcome:welcomeReducer,
+    welcome,
+    voucher
   
 })
 

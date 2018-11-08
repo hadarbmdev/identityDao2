@@ -13,7 +13,7 @@ function getData() {
     return fetch('', requestOptions)
         .then(response => {
             if (!response.ok) {
-                console.error("error:  "+response.statusText);
+                console.error("failed. error = "+response.statusText);
                 return Promise.reject(response.statusText);
             }
 
