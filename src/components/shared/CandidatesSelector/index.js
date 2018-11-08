@@ -10,37 +10,37 @@ import { Paper } from '@material-ui/core';
 const CandidatesSelector = (props) => {
 
 
- const candidatesList = props.candidates
+  const candidatesList = props.candidates
 
- const candidates = candidatesList.map((c) => {
+  const candidates = candidatesList.map((c) => {
 
-    return <CandidateItem 
-                    photo={c.photo}
-                    firstname={c.firstname}
-                    lastname={c.lastname}
-                     />
+    return <CandidateItem
+      photo={c.photo}
+      firstname={c.firstname}
+      lastname={c.lastname}
+    />
   })
 
   return (
 
-  <div>
-  <p className="topHeader">Vouch if profile is real and earn ETH</p>
-  <SwipeableViews>
+    <div>
+      <p className="topHeader">Vouch if profile is real and earn ETH</p>
+      <SwipeableViews>
         {candidates}
-  </SwipeableViews>
-  
-  <Grid container spacing={24}>
+      </SwipeableViews>
 
-  <Grid item xs={6} sm={3}>
-    <Paper>xs=6 sm=3</Paper>
-  </Grid>
-  <Grid item xs={6} sm={3}>
-    <Paper>xs=6 sm=3</Paper>
-  </Grid>
-  </Grid>
+      <Grid container spacing={24}>
 
-  </div>
-    
+        <Grid item xs={6} sm={3}>
+          <Paper>xs=6 sm=3</Paper>
+        </Grid>
+        <Grid item xs={6} sm={3}>
+          <Paper>xs=6 sm=3</Paper>
+        </Grid>
+      </Grid>
+
+    </div>
+
   )
 }
 
