@@ -43,7 +43,7 @@ const CandidatesSelector = (props) => {
   return (
     <SwipeableViews>
         {candidates}
-  </SwipeableViews>
+    </SwipeableViews>
     
     
   )
