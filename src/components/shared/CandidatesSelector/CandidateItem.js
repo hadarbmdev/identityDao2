@@ -28,7 +28,8 @@ class CandidateItem extends Component {
       
           <img src={photo} alt="" />
           <div className="candidateMeta">
-            {firstname + " " + lastname}
+          <Typography variant="caption" gutterBottom>Offering: 0.234567 ETH</Typography>
+          <Typography variant="h5" gutterBottom>{firstname + " " + lastname}</Typography>
           </div>
        
       </div>
