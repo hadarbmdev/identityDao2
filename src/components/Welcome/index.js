@@ -5,7 +5,9 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import PropTypes from 'prop-types';
 import Paper from '@material-ui/core/Paper';
-
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import * as Actions from './actions'
 
 
 class Welcome extends React.Component {
@@ -58,4 +60,20 @@ Welcome.propTypes = {
     registered: PropTypes.string,
 };
 
-export default withRouter(Welcome);
+function mapStateToProps(state) {
+
+    return {
+        //coordinators:state.employees.coordinators,
+        //fundraisers:state.employees.fundraisers,
+
+    }
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        actions: bindActionCreators(Actions, dispatch)
+    };
+}
+
+const connectedWelcome = connect(mapStateToProps, mapDispatchToProps)(withRouter(Welcome));
+export { connectedWelcome as Welcome};
