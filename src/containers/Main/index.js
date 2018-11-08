@@ -16,7 +16,7 @@ export default function Main() {
         <Route exact path="/" component={Welcome} />
         <Route exact path="/welcome" component={Welcome} />
         <Route exact path="/oneOfUs" component={OneOfUs} />
-        <Route exact path="/register" component={Register} />
+        <Route exact path="/register" component={Welcome} />
         <Route exact path="/socialset" component={Socialset} />
         <Route exact path="/voucher" component={Voucher} />
         <Route exact path="/swiper" component={Swiper} />

@@ -9,34 +9,11 @@ import { Paper } from '@material-ui/core';
 
 const CandidatesSelector = (props) => {
 
- const candidatesList =  [{
-    id:1,
-    photo:"https://loremflickr.com/360/360",
-    firstname:"Suzie",
-    lastname:"Bar"
 
+ const candidatesList = props.candidates
 
-  },
-  {
-    id:2,
-    photo:"https://www.fillmurray.com/360/360",
-    firstname:"Mark",
-    lastname:"Boskowitz"
+ const candidates = candidatesList.map((c) => {
 
-
-  },
-  {
-    id:3,
-    photo:"https://placekitten.com/360/360",
-    firstname:"Sibua",
-    lastname:"Papao"
-
-
-  }];  // props.candidates
-
-
-
-  const candidates = candidatesList.map((c) => {
     return <CandidateItem 
                     photo={c.photo}
                     firstname={c.firstname}
