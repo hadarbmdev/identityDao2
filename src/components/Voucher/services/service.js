@@ -35,6 +35,7 @@ function getCandidatesData() {
        photo:"https://content-static.upwork.com/uploads/2014/10/01073427/profilephoto1.jpg",
        firstname:"Suzie",
        lastname:"Bar",
+       ethOffering:0.5334,
        socialMedia:{
            facebook:"facebook.com",
            twitter:"twitter.com",
@@ -50,6 +51,7 @@ function getCandidatesData() {
        photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY0ODGnaKeoz3ffQi0jID50h294U7bAg_sbj8fIiGmqTOsyq0LHw",
        firstname:"Mark",
        lastname:"Boskowitz",
+       ethOffering:500.534534,
        socialMedia:{
         facebook:"facebook.com",
         twitter:"twitter.com",
@@ -64,6 +66,7 @@ function getCandidatesData() {
        photo:"https://static.makeuseof.com/wp-content/uploads/2015/11/perfect-profile-picture-background-constrast-solid.jpg",
        firstname:"Sibua",
        lastname:"Papao",
+       ethOffering:54.534534,
        socialMedia:{
         facebook:"facebook.com",
         twitter:"twitter.com",

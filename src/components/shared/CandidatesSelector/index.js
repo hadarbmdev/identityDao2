@@ -19,6 +19,7 @@ const CandidatesSelector = (props) => {
       photo={c.photo}
       firstname={c.firstname}
       lastname={c.lastname}
+      ethOffering={c.ethOffering}
       socialMedia={c.socialMedia}
     />
   })
