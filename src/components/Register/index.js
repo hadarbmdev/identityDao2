@@ -1,4 +1,3 @@
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
@@ -74,10 +73,23 @@ function SignIn(props) {
             <InputLabel htmlFor="password">Password</InputLabel>
             <Input name="password" type="password" id="password" autoComplete="current-password" />
           </FormControl>
-          <FormControlLabel
-            control={<Checkbox value="remember" color="primary" />}
-            label="Remember me"
-          />
+          
+          <FormControl margin="normal" required fullWidth>
+            <InputLabel htmlFor="facebook">Your Facebook username</InputLabel>
+            <Input name="facebook" type="text" id="facebook" autoComplete="facebook" />
+          </FormControl>
+          
+          <FormControl margin="normal" required fullWidth>
+            <InputLabel htmlFor="linkedin">Your Linkedin username</InputLabel>
+            <Input name="linkedin" type="text" id="linkedin" autoComplete="linkedin" />
+          </FormControl>
+          
+          <FormControl margin="normal" required fullWidth>
+            <InputLabel htmlFor="github">Your Github username</InputLabel>
+            <Input name="github" type="text" id="github" autoComplete="github" />
+          </FormControl>
+          
+          
           <Button
             type="submit"
             fullWidth
