@@ -7,7 +7,7 @@ const CandidatesSelector = (props) => {
 
  const candidatesList =  [{
     id:1,
-    photo:"https://content-static.upwork.com/uploads/2014/10/01073427/profilephoto1.jpg",
+    photo:"https://loremflickr.com/360/360",
     firstname:"Suzie",
     lastname:"Bar"
 
@@ -15,7 +15,7 @@ const CandidatesSelector = (props) => {
   },
   {
     id:2,
-    photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY0ODGnaKeoz3ffQi0jID50h294U7bAg_sbj8fIiGmqTOsyq0LHw",
+    photo:"https://www.fillmurray.com /360/360",
     firstname:"Mark",
     lastname:"Boskowitz"
 
@@ -23,7 +23,7 @@ const CandidatesSelector = (props) => {
   },
   {
     id:3,
-    photo:"https://static.makeuseof.com/wp-content/uploads/2015/11/perfect-profile-picture-background-constrast-solid.jpg",
+    photo:"https://placekitten.com/360/360",
     firstname:"Sibua",
     lastname:"Papao"
 
