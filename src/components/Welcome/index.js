@@ -13,8 +13,7 @@ import * as Actions from './actions'
 class Welcome extends React.Component {
     constructor(props) {
         super(props);
-        //this.handleMouseMove = this.handleMouseMove.bind(this); // later usage
-        // this.state = { x: 0, y: 0 }; // later usage
+       
     }
 
 
@@ -63,9 +62,7 @@ Welcome.propTypes = {
 function mapStateToProps(state) {
 
     return {
-        //coordinators:state.employees.coordinators,
-        //fundraisers:state.employees.fundraisers,
-
+     
     }
 }
 
