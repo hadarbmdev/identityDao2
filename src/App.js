@@ -12,7 +12,7 @@ import configureStore from './store/configureStore'
 
 import './App.css';
 const store = configureStore()
-*/
+
 const theme = createMuiTheme({
   palette: {
     primary: blue,
@@ -24,7 +24,7 @@ class App extends Component {
     return (
 
       <MuiThemeProvider theme={theme}>
-        <Provider >
+        <Provider store={store}>
 
           <div className="App">
             <Router>
