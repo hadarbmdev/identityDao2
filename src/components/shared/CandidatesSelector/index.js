@@ -27,7 +27,6 @@ const CandidatesSelector = (props) => {
   return (
 
     <div>
-      <p className="topHeader">Vouch if profile is real and earn ETH</p>
       <SwipeableViews>
         {candidates}
       </SwipeableViews>
