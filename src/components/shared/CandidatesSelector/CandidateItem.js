@@ -9,30 +9,34 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { Grid } from '@material-ui/core';
-
+import Socialset from '../../Socialset'
 
 
 
 class CandidateItem extends Component {
 
   static propTypes = {
+    key:PropTypes.number,
     id: PropTypes.string,
     photo: PropTypes.string,
     firstname: PropTypes.string,
     lastname: PropTypes.string,
+    socialMedia: PropTypes.object
   }
   render() {
 
-    const { key, firstname, lastname, photo } = this.props
+    const { key, firstname, lastname, photo, socialMedia } = this.props
+    const { facebook, twitter, linkedin, instagram, github } = socialMedia
+
     return (
-      <div className="candidate">
-      
-          <img src={photo} alt="" />
-          <div className="candidateMeta">
+      <div className="candidate" key={key}>
+
+        <img src={photo} alt="" />
+        <div className="candidateMeta">
           <Typography variant="caption" gutterBottom>Offering: 0.234567 ETH</Typography>
           <Typography variant="h5" gutterBottom>{firstname + " " + lastname}</Typography>
-
-          </div>
+          <Socialset linkedin={linkedin} facebook={facebook} twitter={twitter} instagram={instagram} github={github} />
+        </div>
 
       </div>
 
