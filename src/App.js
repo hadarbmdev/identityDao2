@@ -7,7 +7,7 @@ import blue from '@material-ui/core/colors/blue';
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import { Provider, connect } from 'react-redux';
 import { createStore, compose } from 'redux';
-import configureStore from 'store'
+import configureStore from './store/configureStore'
 
 
 import './App.css';
