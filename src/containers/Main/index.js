@@ -1,6 +1,4 @@
 import React from 'react';
-import { Route, Link, Redirect, Switch } from 'react-router-dom';
-import { Welcome } from '../../components/Welcome';
 import { Route, Link, Redirect, Switch } from 'react-router-dom'
 import { Welcome } from '../../components/Welcome'
 import { OneOfUs } from '../../components/OneOfUs'
