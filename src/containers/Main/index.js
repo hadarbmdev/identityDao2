@@ -5,6 +5,7 @@ import { OneOfUs } from '../../components/OneOfUs'
 import { Voucher } from '../../components/Voucher'
 import { Register } from '../../components/Register';
 import { Socialset } from '../../components/Socialset';
+import { Payment } from '../../components/Payment';
 
 export default function Main() {
   return (
@@ -16,6 +17,7 @@ export default function Main() {
         <Route exact path="/register" component={Register} />
         <Route exact path="/socialset" component={Socialset} />
         <Route exact path="/voucher" component={Voucher} />
+        <Route exact path="/payment" component={Payment} />
 
     </div>
   );
