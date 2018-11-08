@@ -25,7 +25,7 @@ class CandidateItem extends Component {
     const { key, firstname, lastname, photo } = this.props
     return (
       <div>
-      
+    
           <img src={photo} />
           <div>
             {firstname + " " + lastname}

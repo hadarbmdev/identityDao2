@@ -15,12 +15,15 @@ class Voucher extends React.Component {
         super(props);
     }
 
+    componentDidMount(){
+        this.props.actions.requestCandidatesData();
+    }
 
     render() {
-
+        const candidatesList =  this.props.candidates
         return (
             <div>
-                <CandidatesSelector />
+                <CandidatesSelector candidates={candidatesList}/>
             </div>
         )
     }
@@ -31,9 +34,9 @@ Voucher.propTypes = {
 };
 
 function mapStateToProps(state) {
-
     return {
-     
+        candidates:state.voucher.candidates,
+        //user:state.user
     }
 }
 
