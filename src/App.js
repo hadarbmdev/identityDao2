@@ -7,12 +7,12 @@ import blue from '@material-ui/core/colors/blue';
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import { Provider, connect } from 'react-redux';
 import { createStore, compose } from 'redux';
-import configureStore from 'store'
+/*import configureStore from 'store'
 
 
 import './App.css';
 const store = configureStore()
-
+*/
 const theme = createMuiTheme({
   palette: {
     primary: blue,
@@ -24,7 +24,7 @@ class App extends Component {
     return (
 
       <MuiThemeProvider theme={theme}>
-        <Provider store={store}>
+        <Provider >
 
           <div className="App">
             <Router>
