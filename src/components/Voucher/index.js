@@ -23,6 +23,7 @@ class Voucher extends React.Component {
         const candidatesList =  this.props.candidates
         return (
             <div>
+                <div>Vouch if profile is real and earn ETH</div>
                 <CandidatesSelector candidates={candidatesList}/>
             </div>
         )
