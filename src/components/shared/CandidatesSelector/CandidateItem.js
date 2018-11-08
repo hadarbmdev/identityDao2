@@ -24,11 +24,13 @@ class CandidateItem extends Component {
 
     const { key, firstname, lastname, photo } = this.props
     return (
-      <div>
-    
-          <img src={photo} />
-          <div>
-            {firstname + " " + lastname}
+      <div className="candidate">
+      
+          <img src={photo} alt="" />
+          <div className="candidateMeta">
+          <Typography variant="caption" gutterBottom>Offering: 0.234567 ETH</Typography>
+          <Typography variant="h5" gutterBottom>{firstname + " " + lastname}</Typography>
+
           </div>
        
       </div>

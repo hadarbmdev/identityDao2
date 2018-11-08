@@ -8,7 +8,6 @@ import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import IconButton from '@material-ui/core/IconButton';
 
-
 class Socialset extends React.Component {
   constructor(props) {
     super(props);
@@ -18,6 +17,7 @@ class Socialset extends React.Component {
     this.state = {
       isOpen: this.props.isOpen
     }
+
 
   }
   toggle() {

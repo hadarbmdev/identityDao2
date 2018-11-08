@@ -20,7 +20,7 @@ class OneOfUs extends React.Component {
 
         return (
             <div>
-                <Grid container
+                <Grid container style={{height:'100vh'}}
                 >
                     <Grid item xs={12}>
                         <h1>One of us</h1>
