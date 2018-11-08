@@ -54,6 +54,6 @@ function getCandidatesData() {
    
    
      }];
-
-    return candidates
+debugger;
+    return Promise.resolve(candidates)
 }

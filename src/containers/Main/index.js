@@ -4,8 +4,7 @@ import { Route, Link, Redirect, Switch } from 'react-router-dom'
 import { Welcome } from '../../components/Welcome'
 import { OneOfUs } from '../../components/OneOfUs'
 import { Voucher } from '../../components/Voucher'
-import { Register } from '../../components/Register';
-import { Socialset } from '../../components/Socialset';
+import  Socialset  from '../../components/Socialset';
 import { Swiper } from '../../components/Swiper';
 import { Payment } from '../../components/Payment';
 
