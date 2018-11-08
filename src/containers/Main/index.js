@@ -9,9 +9,11 @@ export default function Main() {
 
         <Route exact path="/" component={Welcome} />
         <Route exact path="/welcome" component={Welcome} />
+
         <Route exact path="/voucher" component={Voucher} />
 
-        
+
     </div>
   );
 }
+
