@@ -5,13 +5,14 @@ import { Welcome } from '../../components/Welcome'
 import { OneOfUs } from '../../components/OneOfUs'
 import { Voucher } from '../../components/Voucher'
 import  Socialset  from '../../components/Socialset';
+import  { User }  from '../../components/shared/User';
 import { Swiper } from '../../components/Swiper';
 import { Payment } from '../../components/Payment';
 
 export default function Main() {
   return (
     <div>
-
+  <User />
         <Route exact path="/" component={Welcome} />
         <Route exact path="/welcome" component={Welcome} />
         <Route exact path="/oneOfUs" component={OneOfUs} />
