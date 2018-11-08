@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom'
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Avatar from '@material-ui/core/Avatar';
@@ -13,99 +14,56 @@ import InputLabel from '@material-ui/core/InputLabel';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import withStyles from '@material-ui/core/styles/withStyles';
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import * as Actions from './actions'
 
-const styles = theme => ({
-  main: {
-    width: 'auto',
-    display: 'block', // Fix IE 11 issue.
-    marginLeft: theme.spacing.unit * 3,
-    marginRight: theme.spacing.unit * 3,
-    [theme.breakpoints.up(400 + theme.spacing.unit * 3 * 2)]: {
-      width: 400,
-      marginLeft: 'auto',
-      marginRight: 'auto',
-    },
-  },
-  paper: {
-    marginTop: theme.spacing.unit * 8,
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    padding: `${theme.spacing.unit * 2}px ${theme.spacing.unit * 3}px ${theme.spacing.unit * 3}px`,
-  },
-  avatar: {
-    margin: theme.spacing.unit,
-    backgroundColor: theme.palette.secondary.main,
-  },
-  form: {
-    width: '100%', // Fix IE 11 issue.
-    marginTop: theme.spacing.unit,
-  },
-  submit: {
-    marginTop: theme.spacing.unit * 3,
-  },
-  bigAvatar: {
-    width: 80,
-    height: 80,
-  },
-});
 
-function SignIn(props) {
-  const { classes } = props;
+/*
+import { withStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+*/
 
-  return (
-    <main className={classes.main}>
-      <CssBaseline />
-      <Paper className={classes.paper}>
-        <Avatar className={classNames(classes.avatar, classes.bigAvatar)} src="https://www.fillmurray.com/360/360">
-          
-        </Avatar>
-        <Typography component="h1" variant="h5">
-          Sign in
-        </Typography>
-        <form className={classes.form}>
-          <FormControl margin="normal" required fullWidth>
-            <InputLabel htmlFor="email">Email Address</InputLabel>
-            <Input id="email" name="email" autoComplete="email" autoFocus />
-          </FormControl>
-          <FormControl margin="normal" required fullWidth>
-            <InputLabel htmlFor="password">Password</InputLabel>
-            <Input name="password" type="password" id="password" autoComplete="current-password" />
-          </FormControl>
-          
-          <FormControl margin="normal" required fullWidth>
-            <InputLabel htmlFor="facebook">Your Facebook username</InputLabel>
-            <Input name="facebook" type="text" id="facebook" autoComplete="facebook" />
-          </FormControl>
-          
-          <FormControl margin="normal" required fullWidth>
-            <InputLabel htmlFor="linkedin">Your Linkedin username</InputLabel>
-            <Input name="linkedin" type="text" id="linkedin" autoComplete="linkedin" />
-          </FormControl>
-          
-          <FormControl margin="normal" required fullWidth>
-            <InputLabel htmlFor="github">Your Github username</InputLabel>
-            <Input name="github" type="text" id="github" autoComplete="github" />
-          </FormControl>
-          
-          
-          <Button
-            type="submit"
-            fullWidth
-            variant="contained"
-            color="primary"
-            className={classes.submit}
-          >
-            Sign in
-          </Button>
-        </form>
-      </Paper>
-    </main>
-  );
+
+class Register extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
+
+    render() {
+        const registered = this.props.registered
+
+
+        return (
+            <div>
+
+                
+
+
+            </div>
+        )
+    }
 }
 
-SignIn.propTypes = {
-  classes: PropTypes.object.isRequired,
+Register.propTypes = {
+    registered: PropTypes.string,
 };
 
-export default withStyles(styles)(SignIn);
+function mapStateToProps(state) {
+
+    return {
+        
+      
+
+    }
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        actions: bindActionCreators(Actions, dispatch)
+    };
+}
+
+const connectedRegister = connect(mapStateToProps, mapDispatchToProps)(withRouter(Register));
+export { connectedRegister as Register};
