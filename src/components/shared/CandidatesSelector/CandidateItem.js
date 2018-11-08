@@ -24,10 +24,10 @@ class CandidateItem extends Component {
 
     const { key, firstname, lastname, photo } = this.props
     return (
-      <div>
+      <div className="candidate">
       
-          <img src={photo} />
-          <div>
+          <img src={photo} alt="" />
+          <div className="candidateMeta">
             {firstname + " " + lastname}
           </div>
        

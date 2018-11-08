@@ -2,6 +2,7 @@ import React from 'react'
 import CandidateItem from './CandidateItem'
 import './CandidatesSelector.css';
 import SwipeableViews from 'react-swipeable-views';
+import { Typography } from '@material-ui/core';
 
 const CandidatesSelector = (props) => {
 
@@ -15,7 +16,7 @@ const CandidatesSelector = (props) => {
   },
   {
     id:2,
-    photo:"https://www.fillmurray.com /360/360",
+    photo:"https://www.fillmurray.com/360/360",
     firstname:"Mark",
     lastname:"Boskowitz"
 
@@ -41,10 +42,13 @@ const CandidatesSelector = (props) => {
   })
 
   return (
-    <SwipeableViews>
+
+  <div>
+  <p className="topHeader">Vouch if profile is real and earn ETH</p>
+  <SwipeableViews>
         {candidates}
   </SwipeableViews>
-    
+  </div>
     
   )
 }
