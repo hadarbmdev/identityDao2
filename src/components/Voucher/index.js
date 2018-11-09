@@ -36,7 +36,7 @@ class Voucher extends React.Component {
          this.setState({"showPayment":"Vouche"});   
     }
 
-    Vote(){
+    Fake(){
         this.setState({"showPayment":"Fake"});   
    }
 
@@ -79,7 +79,7 @@ class Voucher extends React.Component {
                     </Grid>
                     <Grid item xs={6} sm={3}>
 
-                        <Button variant="extendedFab" aria-label="Delete" onClick={()=>this.Vote()} >
+                        <Button variant="extendedFab" aria-label="Delete" onClick={()=>this.Fake()} >
                             <Icon />
                             Fake
                           </Button>
