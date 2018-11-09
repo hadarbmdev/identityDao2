@@ -29,7 +29,7 @@ export function requestData() {
     function failure(error) { return { type: DATA_FAILURE, error } }
 }
 
-export function vouche(amount) {
+export function vouche(amount,callback) {
     return dispatch => {
         //dispatch(request({ userId }));
 
@@ -37,6 +37,7 @@ export function vouche(amount) {
             .then(
                 data => {
                     dispatch(success(data));
+                    callback()
                     //  history.push('/');
                 },
                 error => {
@@ -52,7 +53,7 @@ export function vouche(amount) {
 }
 
 
-export function fake(amount) {
+export function fake(amount, callback) {
     return dispatch => {
         //dispatch(request({ userId }));
 
@@ -60,6 +61,7 @@ export function fake(amount) {
             .then(
                 data => {
                     dispatch(success(data));
+                    callback();
                     //  history.push('/');
                 },
                 error => {
