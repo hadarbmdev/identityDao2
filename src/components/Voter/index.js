@@ -47,27 +47,29 @@ class Voter extends React.Component {
         const candidate = this.state.selectedCandidate || this.props.candidates[0];
         return (
             <div>
-                <div>Vote</div>
+                <p className="topHeader">Vote like no one is watching</p>
                 <CandidatesSelector isOpen={false} isVoter={true} candidates={candidatesList} slideHandler={this.updateSelectedCandidate} />
+                
+                <div className="innerFlex">
+
                 <Grid container spacing={24}>
 
-                    <Grid item xs={6} sm={3}>
+                    <Grid item xs={6} sm={6}>
 
-                        <Button variant="extendedFab" aria-label="Delete" onClick={()=>this.Real(candidate)}>
-                            <Icon />
-                            Real
-                        </Button>
+                        <a aria-label="Delete" onClick={()=>this.Real(candidate)} className="roundButton">
+                            <img src="/buttonUpvote.svg" />
+                        </a>
 
                     </Grid>
-                    <Grid item xs={6} sm={3}>
+                    <Grid item xs={6} sm={6}>
 
-                        <Button variant="extendedFab" aria-label="Delete" onClick={()=>this.Fake(candidate)}>
-                            <Icon />
-                            Fake
-                          </Button>
+                        <a aria-label="Delete" onClick={()=>this.Fake(candidate)} className="roundButton">
+                            <img src="/buttonDownvote.svg" />
+                        </a>
 
                     </Grid>
                 </Grid>
+                </div>
             </div>
         )
     }
