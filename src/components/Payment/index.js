@@ -16,8 +16,7 @@ class Payment extends React.Component {
     }
 
     render() {
-        const registered = this.props.registered
-
+        const candidate = this.props.candidate
         return (
             <div style={{
                 display: 'flex',
@@ -29,7 +28,7 @@ class Payment extends React.Component {
                     marginTop: '2vh'
                 }}>
                     <Toolbar>
-                        <IconButton color="inherit" aria-label="Menu">
+                        <IconButton color="inherit" aria-label="Menu" onClick={()=>this.props.returnFromPayment()}>
                             <ArrowBack />
                         </IconButton>
                     </Toolbar>
@@ -49,7 +48,7 @@ class Payment extends React.Component {
                         </Grid>
                         <Grid item>
                             <Typography variant='caption'>
-                                Vouch for Noam
+                                Vouch for {candidate.firstname}}
                     </Typography>
                         </Grid>
 
@@ -76,7 +75,6 @@ class Payment extends React.Component {
 
 Payment.propTypes = {
     registered: PropTypes.string,
-    classes: PropTypes.object.isRequired,
 };
 
 function mapStateToProps(state) {
