@@ -17,7 +17,8 @@ class Payment extends React.Component {
 
     render() {
         const candidate = this.props.candidate
-        
+        //const operation = this.props.type
+
         return (
             <div style={{
                 display: 'flex',
@@ -29,7 +30,7 @@ class Payment extends React.Component {
                     marginTop: '2vh'
                 }}>
                     <Toolbar>
-                        <IconButton color="inherit" aria-label="Menu" onClick={()=>this.props.returnFromPayment()}>
+                        <IconButton color="inherit" aria-label="Menu" onClick={() => this.props.returnFromPayment()}>
                             <ArrowBack />
                         </IconButton>
                     </Toolbar>
@@ -50,14 +51,14 @@ class Payment extends React.Component {
                         <Grid item>
                             <Typography variant='caption'>
                                 Vouch for {candidate.firstname}
-                    </Typography>
+                            </Typography>
                         </Grid>
 
                         <Grid item>
                             <Typography variant='h4'>
                                 How much Eth <br />
                                 Are you willing to Vouch
-                    </Typography>
+                            </Typography>
                         </Grid>
                         <Grid item>
                             <Input
@@ -66,6 +67,24 @@ class Payment extends React.Component {
                                 //onChange={this.handleChange('weight')}
                                 endAdornment={<InputAdornment position="end">ETH</InputAdornment>}
                             />
+                        </Grid>
+                        <Grid item>
+                            <Grid container
+                                spacing={16}
+                                alignContent='space-around'
+                                direction='row-reverse'
+                            >
+                                <Grid item>
+                                    <IconButton
+                                        //onClick={()=>}
+                                        className='far fa-check-circle'
+                                        color='primary' />
+                                </Grid>
+
+                                <Grid item>
+                                    <IconButton className='far fa-times-circle' color='primary' />
+                                </Grid>
+                            </Grid>
                         </Grid>
                     </Grid>
                 </Paper>
