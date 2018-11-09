@@ -12,44 +12,39 @@ import CandidatesSelector from '../shared/CandidatesSelector'
 import { Typography } from '@material-ui/core';
 import Icon from '@material-ui/core/Icon';
 import IconButton from '@material-ui/core/IconButton';
+import StackedItems from '../shared/StackedItems'
 
 class Stats extends React.Component {
     constructor(props) {
         super(props);
-      
-        this.state = {
-           
-        }
     }
 
-    componentDidMount(){
+    componentDidMount() {
         this.props.actions.requestData()
     }
 
-  
-    render() {
-        
-        const {ethEarnd, gains,reputation,pending,past} = this.props.stats
 
-       
+    render() {
+
+        const { ethEarnd, gains, reputation, pending, past } = this.props.stats
+
         return (
 
-          <div>
+            <div>
                 <Grid container spacing={24}>
 
                     <Grid item xs={6} sm={3}>
-{ethEarnd}
-
-
+                        {ethEarnd}
                     </Grid>
                     <Grid item xs={6} sm={3}>
 
-                       {gains}
+                        {gains}
 
 
                     </Grid>
                     {reputation}
                 </Grid>
+                <StackedItems items={pending} />
 
             </div>
         )
@@ -62,7 +57,7 @@ Stats.propTypes = {
 function mapStateToProps(state) {
     return {
         stats: state.stats.userData,
-        user:state.user,
+        user: state.user,
 
     }
 }
