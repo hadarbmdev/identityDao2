@@ -24,7 +24,8 @@ class Welcome extends React.Component {
         return (
             <div>
 
-                <h1>Welcome</h1>
+                <img src="" alt="" />
+                <h2>IDENTITY MADE FOR YOU</h2>
                 <h3>What would you like to do today?</h3>
                 <Grid container>
                     <Grid item md={4}>
