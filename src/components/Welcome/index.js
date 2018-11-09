@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom'
 import Button from '@material-ui/core/Button';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
 import PropTypes from 'prop-types';
 import Paper from '@material-ui/core/Paper';
 import { connect } from 'react-redux'
@@ -24,8 +25,9 @@ class Welcome extends React.Component {
         return (
             <div>
 
-                <img src="" alt="" />
-                <h2>IDENTITY MADE FOR YOU</h2>
+                <img src="/mewe-logo.png" className="logoImage" alt="" />
+                <Typography variant="h6" gutterBottom>IDENTITY MADE FOR YOU</Typography>
+                <img src="/hero-image.png" className="heroImage"  alt="" />
                 <h3>What would you like to do today?</h3>
                 <Grid container>
                     <Grid item md={4}>

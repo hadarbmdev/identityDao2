@@ -37,3 +37,13 @@ body {
 	background: linear-gradient(0deg, #13547A, #80D0C7);
 	background-size: 100% 100%;
 }
+
+
+.logoImage{
+  max-width: 105px;
+  margin: 0 auto;
+}
+.heroImage{
+  max-width: 250px;
+  margin: 0 auto;
+}
