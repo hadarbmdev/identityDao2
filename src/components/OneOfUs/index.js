@@ -31,19 +31,19 @@ class OneOfUs extends React.Component {
                             style={{
                                 height: '15vh',
                                 width: '15vh',
-                                marginTop:'2vh',
+                                marginTop:'4vh',
                                 border: '2px solid white',
                                 borderRadius: '5px'
                             }}
                         />
-                        <h1 style={{ color: 'white' }}>Identity made for you</h1>
+                        <h1 style={{ color: 'white', fontWeight: '300', textTransform: 'uppercase', fontSize: '20px' }}>Identity made for you</h1>
                     </Grid>
 
                     <Grid xs={12}>
                         <img src={CenterImage}
                             style={{
                                 height: 'auto',
-                                maxWidth:'250px'
+                                maxWidth:'200px'
                             }}
                         />
                     </Grid>
@@ -59,7 +59,7 @@ class OneOfUs extends React.Component {
                                 <Button style={{ width: '30vh' }}
                                     variant='contained'
                                     onClick={this.goToVoucher}
-                                    color='primary'
+                                    color='secondary'
                                 >Vouch and earn
                                 </Button>
                             </Grid>
@@ -70,7 +70,7 @@ class OneOfUs extends React.Component {
                                 <Grid container alignItems={'center'}>
                                     <h5 style={{ color: 'white' }}>powered by</h5>
                                     <img src={Logo}
-                                        style={{ height: '5vh' }}
+                                        style={{ height: '4vh' }}
                                     />
                                 </Grid>
                             </Grid>
