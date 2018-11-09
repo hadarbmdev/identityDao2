@@ -15,6 +15,7 @@ const CandidatesSelector = (props) => {
 
     return <CandidateItem
       isOpen={props.isOpen}
+      isVoter={props.isVoter}
       key={index}
       photo={c.photo}
       firstname={c.firstname}
@@ -22,10 +23,11 @@ const CandidatesSelector = (props) => {
       ethOffering={c.ethOffering}
       socialMedia={c.socialMedia}
       proposalId={c.proposalId}
+      vouched={c.vouched}
+      suspicious={c.suspicious}
     />
   })
-  /*if (props!=undefined)
-    props.slideHandler(props[0]);*/
+  
   return (
   
     <div>
