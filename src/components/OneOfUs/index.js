@@ -14,13 +14,15 @@ class OneOfUs extends React.Component {
         super(props);
     }
 
-
+    handleClick = () => {
+        this.props.history.push("voucher");
+    }
     render() {
         const registered = this.props.registered
 
         return (
             <div>
-                <Grid container style={{height:'100vh'}}
+                <Grid container style={{ height: '100vh' }}
                 >
                     <Grid item xs={12}>
                         <h1>One of us</h1>
@@ -34,7 +36,11 @@ class OneOfUs extends React.Component {
                             spacing={8}
                         >
                             <Grid item xs={4}>
-                                <Button variant="contained" color="primary">vouch and earn</Button>
+                                <Button variant="contained"
+                                    onClick={this.handleClick}
+                                    color="primary"
+                                >vouch and earn
+                                </Button>
                             </Grid>
                             <Grid item xs={4}>
                                 <Button variant="contained" color="primary">create id</Button>
