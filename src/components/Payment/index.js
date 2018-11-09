@@ -17,6 +17,7 @@ class Payment extends React.Component {
 
     render() {
         const candidate = this.props.candidate
+        
         return (
             <div style={{
                 display: 'flex',
@@ -42,13 +43,13 @@ class Payment extends React.Component {
                         <Grid item>
                             <Avatar
                                 alt="Adelle Charles"
-                                src="https://via.placeholder.com/200"
+                                src={candidate.photo}
                                 style={{ width: '20vh', height: '20vh' }}
                             />
                         </Grid>
                         <Grid item>
                             <Typography variant='caption'>
-                                Vouch for {candidate.firstname}}
+                                Vouch for {candidate.firstname}
                     </Typography>
                         </Grid>
 
