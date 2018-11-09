@@ -36,7 +36,7 @@ class OneOfUs extends React.Component {
                                 borderRadius: '5px'
                             }}
                         />
-                        <h3 style={{ color: 'white' }}>Identity made for you</h3>
+                        <h1 style={{ color: 'white' }}>Identity made for you</h1>
                     </Grid>
 
                     <Grid xs={12}>
