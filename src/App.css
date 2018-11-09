@@ -38,12 +38,22 @@ body {
 	background-size: 100% 100%;
 }
 
+.heroTitle{
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+}
 
 .logoImage{
   max-width: 105px;
-  margin: 0 auto;
+  margin: 35px auto 5px;
+
 }
 .heroImage{
   max-width: 250px;
-  margin: 0 auto;
+  margin: 10px auto 20px;
+}
+
+.heroVouchButton{
+  text-transform:uppercase;
 }

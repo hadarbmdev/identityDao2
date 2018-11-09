@@ -26,31 +26,20 @@ class Welcome extends React.Component {
             <div>
 
                 <img src="/mewe-logo.png" className="logoImage" alt="" />
-                <Typography variant="h6" gutterBottom>IDENTITY MADE FOR YOU</Typography>
+                <h1 variant="h6" gutterBottom className="heroTitle">IDENTITY MADE FOR YOU</h1>
                 <img src="/hero-image.png" className="heroImage"  alt="" />
-                <h3>What would you like to do today?</h3>
-                <Grid container>
-                    <Grid item md={4}>
-                        <span />
-                    </Grid>
-                    <Grid item md={2}>
-                        <Button variant="contained" color="primary">Predict</Button>
-                    </Grid>
-                    <Grid item md={2}>
-                        {(registered == "true") &&
-                            <Button variant="contained" color="primary">Vote</Button>
-                        }
+                <br />
+                <Button variant="contained" color="secondary" className="heroVouchButton">Vouch and earn</Button>
+                <br />
+                {(registered == "true") &&
+                    <Button variant="contained" color="primary">Vote</Button>
+                }
 
-                         {(registered == "false") &&
-                            <Button variant="contained" color="primary">Register</Button>
-                        }
-
+                    {(registered == "false") &&
+                    <Button variant="contained" color="primary">Register</Button>
+                }
                         
-                    </Grid>
-                    <Grid item md={4}>
-                        <span />
-                    </Grid>
-                </Grid>
+                       
 
 
             </div>
