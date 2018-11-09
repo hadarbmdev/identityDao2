@@ -16,23 +16,44 @@ import IconButton from '@material-ui/core/IconButton';
 class Voter extends React.Component {
     constructor(props) {
         super(props);
+        this.Real = this.Real.bind(this);
+        this.Fake = this.Fake.bind(this);
+        this.updateSelectedCandidate = this.updateSelectedCandidate.bind(this);
+        
+        this.state = {
+            selectedCandidate:undefined,
+        }
     }
+
 
     componentDidMount() {
         this.props.actions.requestCandidatesData();
     }
 
+    Real(candidate){
+        this.props.actions.real(candidate.proposalId)
+        }
+
+    Fake(candidate){
+        this.props.actions.fake(candidate.proposalId)
+   }
+
+    updateSelectedCandidate(candidate){
+        this.setState({"selectedCandidate":candidate})
+    }
+
     render() {
         const candidatesList = this.props.candidates
+        const candidate = this.state.selectedCandidate || this.props.candidates[0];
         return (
             <div>
                 <div>Vote</div>
-                <CandidatesSelector isOpen={false} candidates={candidatesList} />
+                <CandidatesSelector isOpen={false} isVoter={true} candidates={candidatesList} slideHandler={this.updateSelectedCandidate} />
                 <Grid container spacing={24}>
 
                     <Grid item xs={6} sm={3}>
 
-                        <Button variant="extendedFab" aria-label="Delete" >
+                        <Button variant="extendedFab" aria-label="Delete" onClick={()=>this.Real(candidate)}>
                             <Icon />
                             Real
                         </Button>
@@ -40,7 +61,7 @@ class Voter extends React.Component {
                     </Grid>
                     <Grid item xs={6} sm={3}>
 
-                        <Button variant="extendedFab" aria-label="Delete" >
+                        <Button variant="extendedFab" aria-label="Delete" onClick={()=>this.Fake(candidate)}>
                             <Icon />
                             Fake
                           </Button>

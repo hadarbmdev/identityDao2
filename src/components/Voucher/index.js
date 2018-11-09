@@ -53,7 +53,7 @@ class Voucher extends React.Component {
   
 
     render() {
-        console.log("this.state.showPayment="+this.state.showPayment)
+        console.log("this.state.showPayment="+this.state.showPayment)  
         const candidatesList = this.props.candidates
        
         const candidate = this.state.selectedCandidate || this.props.candidates[0];
