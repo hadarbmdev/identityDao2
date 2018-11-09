@@ -1,12 +1,9 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom'
 import Button from '@material-ui/core/Button';
-import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import PropTypes from 'prop-types';
-import Paper from '@material-ui/core/Paper';
 import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
 import Mewe from './assets/mewe.png'
 import CenterImage from './assets/1_Visual.png'
 import Logo from './assets/GoodDollar_LOGO.png'
@@ -15,11 +12,13 @@ import Logo from './assets/GoodDollar_LOGO.png'
 class OneOfUs extends React.Component {
     constructor(props) {
         super(props);
+        this.goToVoucher = this.goToVoucher.bind(this);
     }
 
-    handleClick = () => {
-        this.props.history.push("voucher");
+    goToVoucher() {
+        this.props.history.push('voucher');
     }
+
     render() {
         const registered = this.props.registered
 
@@ -32,6 +31,7 @@ class OneOfUs extends React.Component {
                             style={{
                                 height: '15vh',
                                 width: '15vh',
+                                marginTop:'2vh',
                                 border: '2px solid white',
                                 borderRadius: '5px'
                             }}
@@ -40,8 +40,11 @@ class OneOfUs extends React.Component {
                     </Grid>
 
                     <Grid xs={12}>
-                        <img src={CenterImage} 
-                        style={{height:'40vh'}}
+                        <img src={CenterImage}
+                            style={{
+                                height: 'auto',
+                                maxWidth:'250px'
+                            }}
                         />
                     </Grid>
 
@@ -53,20 +56,21 @@ class OneOfUs extends React.Component {
                             spacing={8}
                         >
                             <Grid item>
-                                <Button variant='contained'
-                                    onClick={this.handleClick}
+                                <Button style={{ width: '30vh' }}
+                                    variant='contained'
+                                    onClick={this.goToVoucher}
                                     color='primary'
-                                >vouch and earn
+                                >Vouch and earn
                                 </Button>
                             </Grid>
                             <Grid item >
-                                <Button variant='contained' color='secondary' disabled>create id</Button>
+                                <Button style={{ width: '30vh' }} variant='contained' color='secondary' disabled>Create id</Button>
                             </Grid>
                             <Grid>
                                 <Grid container alignItems={'center'}>
-                                    <h5 style={{color:'white'}}>powered by</h5>
-                                    <img src={Logo} 
-                                    style={{height:'5vh'}}
+                                    <h5 style={{ color: 'white' }}>powered by</h5>
+                                    <img src={Logo}
+                                        style={{ height: '5vh' }}
                                     />
                                 </Grid>
                             </Grid>
