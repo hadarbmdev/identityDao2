@@ -74,4 +74,16 @@ contract Identity is VotingMachineCallbacksInterface, ProposalExecuteInterface {
     function getTotalReputationSupply(bytes32) external view returns(uint256) {
         reputation.totalSupply();
     }
+
+    function mintReputation(uint, address , bytes32) external returns(bool) {
+    }
+
+    function burnReputation(uint, address, bytes32) external returns(bool) {
+    }
+
+    function stakingTokenTransfer(StandardToken, address, uint, bytes32) external returns(bool) {
+    }
+
+    function balanceOfStakingToken(StandardToken, bytes32) external view returns(uint) {
+    }
 }
