@@ -64,3 +64,8 @@ body {
   max-width:360px;
   margin: 0 auto;
 }
+
+.roundButton img{
+  max-width: 96px;
+  height: auto;
+}
