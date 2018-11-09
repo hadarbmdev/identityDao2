@@ -65,7 +65,7 @@ class Voucher extends React.Component {
 
 
            (this.state.showPayment==undefined) && (<div>
-                <div>Vouch if profile is real and earn ETH</div>
+                <p className="topHeader">Vouch if profile is real and earn ETH</p>
                 <CandidatesSelector isOpen={true} candidates={candidatesList} slideHandler={this.updateSelectedCandidate} isVoter={false} />
                 <Grid container spacing={0}>
 
