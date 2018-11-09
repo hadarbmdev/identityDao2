@@ -32,7 +32,6 @@ function getCandidatesData() {
    const candidates =
    [{
        id:1,
-       proposalId:1987978,
        photo:"https://content-static.upwork.com/uploads/2014/10/01073427/profilephoto1.jpg",
        firstname:"Suzie",
        lastname:"Bar",
@@ -49,7 +48,6 @@ function getCandidatesData() {
      },
      {
        id:2,
-       proposalId:2435423534,
        photo:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY0ODGnaKeoz3ffQi0jID50h294U7bAg_sbj8fIiGmqTOsyq0LHw",
        firstname:"Mark",
        lastname:"Boskowitz",
@@ -64,9 +62,7 @@ function getCandidatesData() {
    
      },
      {
-    
        id:3,
-       proposalId:1232123,
        photo:"https://static.makeuseof.com/wp-content/uploads/2015/11/perfect-profile-picture-background-constrast-solid.jpg",
        firstname:"Sibua",
        lastname:"Papao",

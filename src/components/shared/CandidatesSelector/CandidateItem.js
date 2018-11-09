@@ -21,11 +21,16 @@ class CandidateItem extends Component {
     photo: PropTypes.string,
     firstname: PropTypes.string,
     lastname: PropTypes.string,
-    socialMedia: PropTypes.object
+    ethOffering:PropTypes.number,
+    socialMedia: PropTypes.object,
+    isOpen:PropTypes.bool
   }
+
+ 
+
   render() {
 
-    const { key, firstname, lastname, photo, socialMedia } = this.props
+    const { key, firstname, lastname, photo, ethOffering,socialMedia } = this.props
     const { facebook, twitter, linkedin, instagram, github } = socialMedia
 
     return (
@@ -33,9 +38,9 @@ class CandidateItem extends Component {
 
         <img src={photo} alt="" />
         <div className="candidateMeta">
-          <Typography variant="caption" gutterBottom>Offering: 0.234567 ETH</Typography>
+          <Typography variant="caption" gutterBottom>Offering: {ethOffering} ETH</Typography>
           <Typography variant="h5" gutterBottom>{firstname + " " + lastname}</Typography>
-          <Socialset linkedin={linkedin} facebook={facebook} twitter={twitter} instagram={instagram} github={github} />
+          <Socialset isOpen={this.props.isOpen} linkedin={linkedin} facebook={facebook} twitter={twitter} instagram={instagram} github={github} />
         </div>
 
       </div>
