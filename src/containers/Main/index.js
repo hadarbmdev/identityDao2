@@ -9,6 +9,8 @@ import  { User }  from '../../components/shared/User';
 import { Swiper } from '../../components/Swiper';
 import { Payment } from '../../components/Payment';
 import { Voter } from '../../components/Voter';
+import { Stats } from '../../components/Stats';
+
 
 
 export default function Main() {
@@ -24,6 +26,8 @@ export default function Main() {
         <Route exact path="/swiper" component={Swiper} />
         <Route exact path="/payment" component={Payment} />
         <Route exact path="/voter" component={Voter} />
+        <Route exact path="/stats" component={Stats} />
+
 
 
     </div>
