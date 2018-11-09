@@ -53,7 +53,7 @@ class Voucher extends React.Component {
   
 
     render() {
-        console.log("this.state.showPayment="+this.state.showPayment)
+        console.log("this.state.showPayment="+this.state.showPayment)  
         const candidatesList = this.props.candidates
        
         const candidate = this.state.selectedCandidate || this.props.candidates[0];
@@ -66,7 +66,7 @@ class Voucher extends React.Component {
 
            (this.state.showPayment==undefined) && (<div>
                 <div>Vouch if profile is real and earn ETH</div>
-                <CandidatesSelector isOpen={true} candidates={candidatesList} slideHandler={this.updateSelectedCandidate} />
+                <CandidatesSelector isOpen={true} candidates={candidatesList} slideHandler={this.updateSelectedCandidate} isVoter={false} />
                 <Grid container spacing={24}>
 
                     <Grid item xs={6} sm={3}>

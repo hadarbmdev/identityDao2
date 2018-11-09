@@ -23,15 +23,19 @@ class CandidateItem extends Component {
     lastname: PropTypes.string,
     ethOffering:PropTypes.number,
     socialMedia: PropTypes.object,
-    isOpen:PropTypes.bool
+    isOpen:PropTypes.bool,
+    vouched:PropTypes.object,
+    suspcious:PropTypes.object,
+    isVoter:PropTypes.boolean
   }
 
  
 
   render() {
 
-    const { key, firstname, lastname, photo, ethOffering,socialMedia } = this.props
+    const { key, firstname, lastname, photo, ethOffering,vouched,suspicious,socialMedia } = this.props
     const { facebook, twitter, linkedin, instagram, github } = socialMedia
+    const isVoter = this.props.isVoter
 
     return (
       <div className="candidate" key={key}>
@@ -40,6 +44,10 @@ class CandidateItem extends Component {
         <div className="candidateMeta">
           <Typography variant="caption" gutterBottom>Offering: {ethOffering} ETH</Typography>
           <Typography variant="h5" gutterBottom>{firstname + " " + lastname}</Typography>
+
+          {isVoter&&<div>{vouched.amount}  Vouched  {vouched.money}</div>}
+          {isVoter&&<div>{suspicious.amount}  Suspicious  {suspicious.money}</div>}
+
           <Socialset isOpen={this.props.isOpen} linkedin={linkedin} facebook={facebook} twitter={twitter} instagram={instagram} github={github} />
         </div>
 
