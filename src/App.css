@@ -35,5 +35,27 @@ body {
 	width: 100wh;
 	height: 100vh;
 	background: linear-gradient(0deg, #13547A, #80D0C7);
-	background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  font-family: "Roboto";
+}
+
+.heroTitle{
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.logoImage{
+  max-width: 105px;
+  margin: 35px auto 5px;
+
+}
+.heroImage{
+  max-width: 250px;
+  margin: 10px auto 20px;
+}
+
+.heroVouchButton{
+  text-transform:uppercase;
 }
