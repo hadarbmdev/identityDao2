@@ -58,6 +58,12 @@ class Voucher extends React.Component {
        
         const candidate = this.state.selectedCandidate || this.props.candidates[0];
         return (
+<<<<<<< HEAD
+            <div>
+                <p className="topHeader">Vouch if profile is real and earn ETH</p>
+                <CandidatesSelector candidates={candidatesList}/>
+            </div>
+=======
 
             ((this.state.showPayment=="Vouche")&&(<Payment type="Vouche" candidate={candidate} returnFromPayment={this.returnFromPayment}></Payment>))||    
             ((this.state.showPayment=="Vote")&&(<Payment type="Vote" candidate={candidate} returnFromPayment={this.returnFromPayment}></Payment>)) ||   
@@ -87,6 +93,7 @@ class Voucher extends React.Component {
                     </Grid>
                 </Grid>
             </div>)
+>>>>>>> 096ebcbc46c37e4421d07a2244564a29e6601608
         )
     }
 }
