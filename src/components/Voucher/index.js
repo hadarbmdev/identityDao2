@@ -18,7 +18,7 @@ class Voucher extends React.Component {
     constructor(props) {
         super(props);
         this.Vouche = this.Vouche.bind(this);
-        this.Vote = this.Vote.bind(this);
+        this.Fake = this.Fake.bind(this);
         this.updateSelectedCandidate = this.updateSelectedCandidate.bind(this);
         this.returnFromPayment = this.returnFromPayment.bind(this)
         
