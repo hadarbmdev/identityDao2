@@ -36,8 +36,8 @@ class Voucher extends React.Component {
          this.setState({"showPayment":"Vouche"});   
     }
 
-    Vote(){
-        this.setState({"showPayment":"Vote"});   
+    Fake(){
+        this.setState({"showPayment":"Fake"});   
    }
 
     updateSelectedCandidate(candidate){
@@ -60,7 +60,7 @@ class Voucher extends React.Component {
         return (
 
             ((this.state.showPayment=="Vouche")&&(<Payment type="Vouche" candidate={candidate} returnFromPayment={this.returnFromPayment}></Payment>))||    
-            ((this.state.showPayment=="Vote")&&(<Payment type="Vote" candidate={candidate} returnFromPayment={this.returnFromPayment}></Payment>)) ||   
+            ((this.state.showPayment=="Fake")&&(<Payment type="Fake" candidate={candidate} returnFromPayment={this.returnFromPayment}></Payment>)) ||   
 
 
 
@@ -79,7 +79,7 @@ class Voucher extends React.Component {
                     </Grid>
                     <Grid item xs={6} sm={3}>
 
-                        <Button variant="extendedFab" aria-label="Delete" onClick={()=>this.Vote()} >
+                        <Button variant="extendedFab" aria-label="Delete" onClick={()=>this.Fake()} >
                             <Icon />
                             Fake
                           </Button>

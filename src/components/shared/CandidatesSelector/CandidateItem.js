@@ -26,7 +26,7 @@ class CandidateItem extends Component {
     isOpen:PropTypes.bool,
     vouched:PropTypes.object,
     suspcious:PropTypes.object,
-    isVoter:PropTypes.boolean
+    
   }
 
  
