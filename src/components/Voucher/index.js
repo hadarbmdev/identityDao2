@@ -67,22 +67,21 @@ class Voucher extends React.Component {
            (this.state.showPayment==undefined) && (<div>
                 <p className="topHeader">Vouch if profile is real and earn ETH</p>
                 <CandidatesSelector isOpen={true} candidates={candidatesList} slideHandler={this.updateSelectedCandidate} isVoter={false} />
-                <Grid container spacing={0}>
+                
+                <Grid container spacing={0} justify="center">
 
                     <Grid item xs={6} sm={3}>
 
-                        <Button variant="extendedFab" aria-label="Delete" onClick={()=>this.Vouche()}>
-                            <Icon />
-                            Vouche
+                        <Button aria-label="Delete" onClick={()=>this.Vouche()}>
+                            <img src="/buttonFake.png" />
                         </Button>
 
                     </Grid>
                     <Grid item xs={6} sm={3}>
 
-                        <Button variant="extendedFab" aria-label="Delete" onClick={()=>this.Fake()} >
-                            <Icon />
-                            Fake
-                          </Button>
+                        <Button aria-label="Delete" onClick={()=>this.Fake()} >
+                            <img src="/buttonVouch.png" />
+                        </Button>
 
                     </Grid>
                 </Grid>
