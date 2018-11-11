@@ -22,7 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "migrate": "truffle migrate --network ganache_develop --reset"
+
   },
   "eslintConfig": {
     "extends": "react-app"
