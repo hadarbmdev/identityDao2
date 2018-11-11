@@ -34,7 +34,7 @@ class Socialset extends React.Component {
     return (
       <div>
 
-            <Typography variant="caption">View Proofs of Identity</Typography>
+            <h6 style={{ color: 'primary', fontWeight: '400', display: 'inline', textTransform: 'uppercase', fontSize: '10px' }}>Proofs of Identity</h6>
             <IconButton className='fab fa-facebook-square' color="primary" onClick={()=>this.openUrl(facebook)} />
             <IconButton className='fab fa-twitter-square' color="primary" onClick={()=>this.openUrl(twitter)}/>
 
